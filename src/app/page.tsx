@@ -12,7 +12,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-grid container">
           <div>
-            <p className="eyebrow">Human-centered software</p>
+            <p className="eyebrow">Alviteq · Technology company</p>
             <h1>Technology that works for you.</h1>
             <p className="lead">Alviteq creates private, resilient products for the information that matters most—without making people surrender control of their digital lives.</p>
             <div className="actions">
@@ -41,7 +41,7 @@ export default function Home() {
       <section className="section tint">
         <div className="split container">
           <div>
-            <p className="eyebrow">Introducing OwnKeep</p>
+            <p className="eyebrow">OwnKeep · Flagship product</p>
             <h2>Your life, organized inside an encrypted vault.</h2>
             <p className="lead">OwnKeep helps people securely collect documents, extract useful details, manage reminders, and connect records to the people, places, and things in their lives.</p>
             <Link className="button" href="/ownkeep">Discover OwnKeep</Link>

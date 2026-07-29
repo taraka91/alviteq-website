@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: { default: "Alviteq — Private technology for everyday life", template: "%s | Alviteq" },
   description: "Alviteq builds private, dependable software that keeps important information under your control.",
   icons: {
-    icon: "/images/alviteq-mark.png",
-    apple: "/images/alviteq-mark.png",
+    icon: "/images/alviteq-mark-v2.png",
+    apple: "/images/alviteq-mark-v2.png",
   },
   openGraph: {
     title: "Alviteq",
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     url: "https://alviteq.com",
     siteName: "Alviteq",
     type: "website",
-    images: [{ url: "/images/alviteq-brand-card.png", width: 1536, height: 1024, alt: "Alviteq" }],
+    images: [{ url: "/images/alviteq-brand-card-v2.png", width: 1200, height: 630, alt: "Alviteq — Technology you can trust" }],
   },
 };
 
 const nav = [
   ["About", "/about"],
   ["Products", "/products"],
-  ["OwnKeep", "/ownkeep"],
+  ["OwnKeep Product", "/ownkeep"],
   ["Technology", "/technology"],
   ["Careers", "/careers"],
 ];
@@ -38,10 +38,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <Link className="brand" href="/" aria-label="Alviteq home">
               <Image
                 className="brand-logo"
-                src="/images/alviteq-logo.png"
+                src="/images/alviteq-logo-v2.png"
                 alt="Alviteq"
-                width={1518}
-                height={378}
+                width={1500}
+                height={275}
                 priority
               />
             </Link>
@@ -58,10 +58,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <div>
                 <Image
                   className="footer-logo"
-                  src="/images/alviteq-logo.png"
+                  src="/images/alviteq-logo-v2.png"
                   alt="Alviteq"
-                  width={1518}
-                  height={378}
+                  width={1500}
+                  height={275}
                 />
                 <p>Thoughtful technology designed around privacy, resilience, and human control.</p>
               </div>
