@@ -133,7 +133,6 @@ h3 { font-size: 1.25rem; }
 .footer h3 { color: white; }
 .footer-logo {
   display: block; width: 215px; height: auto; margin-bottom: 18px;
-  padding: 10px 12px; border-radius: 10px; background: white;
 }
 .footer-links { display: grid; gap: 10px; }
 .copyright { margin-top: 45px; padding-top: 24px; border-top: 1px solid #263950; font-size: .86rem; }

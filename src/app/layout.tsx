@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: { default: "Alviteq — Private technology for everyday life", template: "%s | Alviteq" },
   description: "Alviteq builds private, dependable software that keeps important information under your control.",
   icons: {
-    icon: "/images/alviteq-mark-v2.png",
-    apple: "/images/alviteq-mark-v2.png",
+    icon: "/brand/alviteq-mark.svg",
+    apple: "/brand/alviteq-mark.png",
   },
   openGraph: {
     title: "Alviteq",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://alviteq.com",
     siteName: "Alviteq",
     type: "website",
-    images: [{ url: "/images/alviteq-brand-card-v2.png", width: 1200, height: 630, alt: "Alviteq — Technology you can trust" }],
+    images: [{ url: "/brand/alviteq-social-card.png", width: 1200, height: 630, alt: "Alviteq — Technology you can trust" }],
   },
 };
 
@@ -38,10 +38,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <Link className="brand" href="/" aria-label="Alviteq home">
               <Image
                 className="brand-logo"
-                src="/images/alviteq-logo-v2.png"
+                src="/brand/alviteq-logo.svg"
                 alt="Alviteq"
-                width={1500}
-                height={275}
+                width={620}
+                height={112}
                 priority
               />
             </Link>
@@ -58,10 +58,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <div>
                 <Image
                   className="footer-logo"
-                  src="/images/alviteq-logo-v2.png"
+                  src="/brand/alviteq-logo-dark.svg"
                   alt="Alviteq"
-                  width={1500}
-                  height={275}
+                  width={620}
+                  height={112}
                 />
                 <p>Thoughtful technology designed around privacy, resilience, and human control.</p>
               </div>
