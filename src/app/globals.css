@@ -21,6 +21,9 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
+.skip-link { position: fixed; left: 16px; top: 12px; z-index: 100; padding: 10px 14px; border-radius: 8px; color: white; background: var(--ink); transform: translateY(-150%); transition: transform .2s ease; }
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
 .container { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
 .site-header {
   position: sticky; top: 0; z-index: 20;
@@ -159,8 +162,10 @@ h3 { font-size: 1.25rem; }
 .legal h2 { margin-top: 46px; font-size: 1.6rem; }
 .legal p { color: var(--muted); }
 .legal a { color: var(--blue); text-decoration: underline; }
+.not-found { min-height: 72vh; display: grid; align-items: center; padding-block: 100px; background: #f7f9fc; }
+.not-found h1 { max-width: 780px; }
 .footer { padding-block: 60px 30px; color: #becbe0; background: var(--ink); }
-.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 50px; }
+.footer-grid { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: 45px; }
 .footer h3 { color: white; }
 .footer-logo {
   display: block; width: 215px; height: auto; margin-bottom: 18px;
@@ -275,4 +280,7 @@ h3 { font-size: 1.25rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+@media (forced-colors: active) {
+  .button, .mobile-nav summary, .capability-cloud span { border: 1px solid ButtonText; }
 }

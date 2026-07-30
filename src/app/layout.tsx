@@ -63,6 +63,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <header className="site-header">
@@ -90,7 +91,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </details>
           </nav>
         </header>
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <footer className="footer">
           <div className="container">
             <div className="footer-grid">
@@ -109,6 +110,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <Link href="/about">About</Link>
                 <Link href="/careers">Careers</Link>
                 <Link href="/contact">Contact</Link>
+              </div>
+              <div className="footer-links">
+                <h3>Products</h3>
+                <Link href="/products">All products</Link>
+                <Link href="/products/ownkeep">OwnKeep</Link>
+                <Link href="/technology">Technology</Link>
               </div>
               <div className="footer-links">
                 <h3>Legal</h3>
