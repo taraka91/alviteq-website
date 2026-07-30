@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { PageHero } from "@/components/page-elements";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Privacy Policy", description: "Privacy information for the Alviteq company website." };
+export const metadata = pageMetadata({ title: "Privacy Policy", description: "Learn how information is handled when you visit the Alviteq website or contact the company.", path: "/privacy" });
 
 export default function PrivacyPage() {
   return <><PageHero eyebrow="Legal" title="Privacy Policy" intro="This policy explains the limited information involved when you visit the Alviteq website or contact us." />

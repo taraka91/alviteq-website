@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { Cta, FeatureGrid, PageHero } from "@/components/page-elements";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "About", description: "Meet Alviteq, an independent technology company building thoughtful products for everyday life." };
+export const metadata = pageMetadata({ title: "About Alviteq", description: "Meet Alviteq, an independent technology company building thoughtful products for everyday life.", path: "/about" });
 
 export default function AboutPage() {
   return <><PageHero eyebrow="About Alviteq" title="Powerful technology without unnecessary complexity." intro="Alviteq is an independent technology company building software products for everyday life." />

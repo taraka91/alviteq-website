@@ -5,8 +5,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alviteq.com"),
-  title: { default: "Alviteq — Technology built for everyday life", template: "%s | Alviteq" },
-  description: "Alviteq is an independent technology company building thoughtful digital products that solve real-world problems.",
+  title: { default: "Alviteq | Technology Built for Everyday Life", template: "%s | Alviteq" },
+  description: "Alviteq is a technology company building thoughtful digital products that solve real-world problems across mobile, desktop, web and intelligent platforms.",
+  alternates: { canonical: "https://alviteq.com/" },
+  robots: { index: true, follow: true },
   icons: {
     icon: [
       { url: "/brand/official/favicon.ico", sizes: "any" },
@@ -15,13 +17,38 @@ export const metadata: Metadata = {
     apple: "/brand/official/alviteq-icon-192.png",
   },
   openGraph: {
-    title: "Alviteq",
-    description: "Thoughtful digital products that solve real-world problems.",
+    title: "Alviteq | Technology Built for Everyday Life",
+    description: "Alviteq builds thoughtful digital products that solve real-world problems across mobile, desktop, web and intelligent platforms.",
     url: "https://alviteq.com",
     siteName: "Alviteq",
     type: "website",
     images: [{ url: "/brand/alviteq-social-card-final.png", width: 1200, height: 630, alt: "Alviteq — Technology you can trust" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alviteq | Technology Built for Everyday Life",
+    description: "Thoughtful digital products that solve real-world problems.",
+    images: ["/brand/alviteq-social-card-final.png"],
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Alviteq",
+  url: "https://alviteq.com/",
+  logo: "https://alviteq.com/brand/official/alviteq-icon-512.png",
+  email: "hello@alviteq.com",
+  description: "An independent technology company building thoughtful digital products for everyday life.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Alviteq",
+  url: "https://alviteq.com/",
+  description: "Technology built for everyday life.",
+  publisher: { "@type": "Organization", name: "Alviteq" },
 };
 
 const nav = [
@@ -36,6 +63,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <header className="site-header">
           <nav className="nav container" aria-label="Main navigation">
             <Link className="brand" href="/" aria-label="Alviteq home">

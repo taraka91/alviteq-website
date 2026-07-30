@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { Cta, FeatureGrid, PageHero } from "@/components/page-elements";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Technology", description: "Explore Alviteq's engineering philosophy across platforms, intelligence, cloud, security, and reliability." };
+export const metadata = pageMetadata({ title: "Technology", description: "Explore Alviteq's engineering philosophy across platforms, intelligence, cloud, security, and reliability.", path: "/technology" });
 
 export default function TechnologyPage() {
   return <><PageHero eyebrow="Technology" title="Technology chosen for the problem." intro="Alviteq combines engineering approaches according to what each product genuinely needs—not according to a fixed stack or passing trend." />

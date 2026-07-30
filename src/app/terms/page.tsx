@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { PageHero } from "@/components/page-elements";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Terms & Conditions", description: "Terms governing use of the Alviteq company website." };
+export const metadata = pageMetadata({ title: "Terms & Conditions", description: "Read the terms governing access to and use of the public Alviteq company website.", path: "/terms" });
 
 export default function TermsPage() {
   return <><PageHero eyebrow="Legal" title="Terms & Conditions" intro="These terms govern access to and use of the public Alviteq website." />

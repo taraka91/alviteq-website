@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Cta, PageHero } from "@/components/page-elements";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Products", description: "Explore thoughtful digital products built by Alviteq." };
+export const metadata = pageMetadata({ title: "Products", description: "Explore thoughtful digital products built by Alviteq to solve real-world problems.", path: "/products" });
 
 export default function ProductsPage() {
   return <><PageHero eyebrow="Products by Alviteq" title="Technology becomes meaningful when it solves something real." intro="We build focused digital products around clear everyday problems." action={{label:"Explore OwnKeep",href:"/products/ownkeep"}} />

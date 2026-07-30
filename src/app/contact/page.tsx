@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { PageHero } from "@/components/page-elements";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Contact", description: "Contact Alviteq about the company, product support, privacy, or security." };
+export const metadata = pageMetadata({ title: "Contact Alviteq", description: "Contact Alviteq about the company, products, support, privacy, security, partnerships, or careers.", path: "/contact" });
 
 const contacts = [
   ["General","Company, product, partnership, and media enquiries.","hello@alviteq.com"],
