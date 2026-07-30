@@ -81,6 +81,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
               <Link className="button" href="/contact">Contact</Link>
             </div>
+            <details className="mobile-nav">
+              <summary>Menu</summary>
+              <div>
+                {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
+                <Link href="/contact">Contact</Link>
+              </div>
+            </details>
           </nav>
         </header>
         <main>{children}</main>
