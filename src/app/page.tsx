@@ -1,86 +1,84 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const productPrinciples = [
-  ["01", "Useful", "Technology should solve a clear problem and create value people can feel."],
-  ["02", "Thoughtful", "Complex engineering should result in simple, understandable experiences."],
-  ["03", "Dependable", "Products should earn and keep a place in people’s everyday lives."],
+const trustFacts = [
+  ["Independent", "Technology company"],
+  ["India", "Built with global ambition"],
+  ["Long-term", "Software products"],
+  ["Responsible", "Privacy-first engineering"],
 ];
 
-const engineeringPrinciples = [
-  ["Human first", "Start with the problem, the person, and the context—not the technology."],
-  ["Intelligence with purpose", "Use AI where it creates meaningful value, never simply to add a feature label."],
-  ["Privacy & security", "Design protection into each product from the beginning."],
-  ["Built to last", "Prefer maintainable engineering and long-term usefulness over short-lived trends."],
+const roadmap = [
+  ["Now", "OwnKeep", "Private digital life management", "Building"],
+  ["Next", "Product two", "A new everyday problem", "Exploring"],
+  ["Future", "Alviteq", "A family of useful products", "Long term"],
 ];
-
-const capabilities = ["Mobile", "Desktop", "Web", "Artificial Intelligence", "On-device Intelligence", "Cloud", "Offline-first Systems", "Security"];
 
 export default function Home() {
   return <>
-    <section className="hero corporate-hero">
-      <div className="hero-grid container">
-        <div>
-          <p className="eyebrow">Alviteq · Independent technology company</p>
-          <h1>Technology built for everyday life.</h1>
-          <p className="lead">Alviteq builds intelligent, dependable digital products designed to make everyday tasks simpler.</p>
-          <div className="actions">
-            <Link className="button" href="/products">Explore our products</Link>
-            <Link className="button secondary" href="/about">About Alviteq</Link>
-          </div>
-          <p className="brand-promise">Technology you can trust.</p>
+    <section className="v2-hero">
+      <div className="container v2-hero-inner">
+        <p className="v2-kicker reveal">Independent technology company</p>
+        <h1 className="reveal delay-1">Building technology<br />people love using<br /><span>every day.</span></h1>
+        <div className="v2-hero-bottom reveal delay-2">
+          <p>Simple. Intelligent. Built to last.</p>
+          <Link className="text-link" href="/products">Explore products <span aria-hidden="true">↗</span></Link>
         </div>
-        <div className="company-mark-panel" aria-label="Alviteq company mark">
-          <Image src="/brand/official/alviteq-icon.svg" alt="" width={512} height={512} priority />
-          <span>Thoughtful products.<br />Real-world value.</span>
-        </div>
+        <Image className="v2-hero-mark" src="/brand/official/alviteq-icon.svg" width={512} height={512} alt="" priority />
       </div>
     </section>
 
-    <section className="section container">
-      <div className="section-head">
-        <p className="eyebrow">What we&apos;re building</p>
-        <h2>We build technology around real problems.</h2>
-        <p className="lead">From personal productivity and digital organization to intelligent software and connected experiences, Alviteq creates products designed to be useful beyond the novelty of technology itself.</p>
-      </div>
-      <div className="grid-3">
-        {productPrinciples.map(([icon, title, body]) => <article className="card" key={title}><div className="card-icon">{icon}</div><h3>{title}</h3><p>{body}</p></article>)}
-      </div>
-    </section>
-
-    <section className="section tint">
+    <section className="v2-product-intro section">
       <div className="container">
-        <div className="section-head"><p className="eyebrow">Products from Alviteq</p><h2>Meet OwnKeep.</h2></div>
-        <div className="product-showcase home-product">
-          <div>
-            <Image className="product-icon" src="/images/ownkeep-icon.png" width={150} height={150} alt="OwnKeep application icon" />
-            <p className="eyebrow">OwnKeep · An Alviteq product</p>
-            <h2>Your important information. Organized. Private. Available.</h2>
-            <p className="lead">A private digital space for documents, records, reminders, passwords, and the information that matters in everyday life.</p>
-            <div className="platform-list"><span>Offline-first</span><span>Local encryption</span><span>Document intelligence</span><span>Cross-platform</span><span>Encrypted backups</span></div>
-            <Link className="button" href="/products/ownkeep">Explore OwnKeep</Link>
-          </div>
-          <Image className="vault-art" src="/images/ownkeep-vault.png" width={750} height={1000} alt="OwnKeep encrypted vault illustration" />
+        <div className="v2-section-label"><span>01</span><p>Our products</p></div>
+        <div className="v2-product-heading">
+          <div><p className="eyebrow">OwnKeep</p><h2>Everything important.<br />One private place.</h2></div>
+          <p>Documents, records, reminders, passwords, and the details that keep everyday life moving—organized inside a private digital vault.</p>
+        </div>
+      </div>
+      <div className="container v2-product-stage">
+        <div className="v2-product-glow" aria-hidden="true" />
+        <Image className="v2-screen-board" src="/images/ownkeep-screens.png" width={1800} height={1125} alt="OwnKeep product screens showing documents, reminders, people, timeline, search, and settings" />
+        <div className="v2-product-actions">
+          <div className="v2-product-pills"><span>Private by design</span><span>Offline-first</span><span>Cross-platform</span></div>
+          <Link className="button light" href="/products/ownkeep">Discover OwnKeep</Link>
         </div>
       </div>
     </section>
 
-    <section className="section container">
-      <div className="section-head"><p className="eyebrow">How we think</p><h2>Capability guided by purpose.</h2></div>
-      <div className="principle-grid">
-        {engineeringPrinciples.map(([title, body], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{body}</p></article>)}
+    <section className="v2-belief section">
+      <div className="container">
+        <div className="v2-section-label"><span>02</span><p>What we believe</p></div>
+        <blockquote>Technology should disappear.<br /><span>What remains is the help it gives.</span></blockquote>
+        <p className="v2-belief-copy">We start with what people are trying to do, then use design, engineering, and intelligence to make that experience feel simpler—not more technical.</p>
       </div>
     </section>
 
-    <section className="section tint">
-      <div className="split container">
-        <div><p className="eyebrow">Engineering without boundaries</p><h2>Technology chosen for the problem.</h2><p className="lead">We work across platforms and technical approaches, selecting what helps a product become simpler, more capable, and more dependable.</p><Link className="button secondary" href="/technology">Our technology philosophy</Link></div>
-        <div className="capability-cloud">{capabilities.map(item => <span key={item}>{item}</span>)}</div>
+    <section className="v2-trust section">
+      <div className="container">
+        <div className="v2-section-label"><span>03</span><p>Built honestly</p></div>
+        <div className="v2-trust-heading"><h2>Early in the journey.<br />Serious about the destination.</h2><p>We will not invent scale, customers, or history. Trust starts with being clear about who we are and how we build.</p></div>
+        <div className="v2-facts">{trustFacts.map(([value,label])=><div key={value}><strong>{value}</strong><span>{label}</span></div>)}</div>
       </div>
     </section>
 
-    <section className="section container">
-      <div className="vision-panel"><p className="eyebrow">Building for what comes next</p><h2>More capable should not mean more complicated.</h2><p>Alviteq is being built around a simple idea: technology should become more capable without becoming harder to use. We are building products intended to remain useful as devices, platforms, and intelligent systems continue to evolve.</p><Link className="button" href="/products">See what we&apos;re building</Link></div>
+    <section className="v2-roadmap section">
+      <div className="container">
+        <div className="v2-section-label"><span>04</span><p>What comes next</p></div>
+        <div className="v2-roadmap-head"><h2>One product today.<br />A company for the next decade.</h2><p>Our ambition is broad. Our announcements will remain honest.</p></div>
+        <div className="v2-roadmap-list">{roadmap.map(([time,name,description,status], index)=><article key={time}>
+          <span className="v2-roadmap-index">0{index+1}</span>
+          <div><small>{time}</small><h3>{name}</h3></div>
+          <p>{description}</p><em>{status}</em>
+        </article>)}</div>
+      </div>
+    </section>
+
+    <section className="v2-final">
+      <div className="container v2-final-inner">
+        <Image src="/brand/official/alviteq-icon-white.svg" width={512} height={512} alt="" />
+        <div><p className="eyebrow">Technology you can trust</p><h2>Building for everyday life.<br />And everything after.</h2><Link className="button light" href="/about">Meet Alviteq</Link></div>
+      </div>
     </section>
   </>;
 }
