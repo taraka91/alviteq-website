@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import { Cta, FeatureGrid, PageHero } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "About", description: "Meet Alviteq and the principles behind our privacy-first products." };
+export const metadata: Metadata = { title: "About", description: "Meet Alviteq, an independent technology company building thoughtful products for everyday life." };
 
 export default function AboutPage() {
-  return <><PageHero eyebrow="About Alviteq" title="Technology should earn a place in your life." intro="Alviteq is a product technology company building private, resilient software around the information people value most." />
-    <section className="section container"><div className="split"><div><p className="eyebrow">Our purpose</p><h2>Make powerful software feel trustworthy.</h2><p className="lead">Important information is often scattered across files, inboxes, devices, and services. We create products that bring it together while preserving clear human ownership.</p><p>Our work joins product design, security engineering, and local intelligence from the beginning—not as separate layers added at the end.</p></div><div className="quote-panel">“The best private technology does more than protect information. It helps people understand and use it without giving up control.”</div></div></section>
-    <section className="section tint"><div className="container"><div className="section-head"><p className="eyebrow">How we work</p><h2>Principles that guide the product.</h2></div><FeatureGrid items={[
-      ["01","Human control","Suggestions remain reviewable, exports stay explicit, and recovery choices are explained clearly."],
-      ["02","Local capability","Essential workflows should remain useful without depending on a permanent cloud connection."],
-      ["03","Responsible scope","We avoid claims the product cannot support and treat limitations as part of honest design."],
-      ["04","Cross-platform quality","Mobile and desktop experiences share one product model while respecting each operating system."],
-      ["05","Durable ownership","Portable encrypted backups help users retain access beyond one installation or device."],
-      ["06","Continuous verification","Security, functionality, accessibility, and visual quality are tested as the product evolves."]
-    ]} /></div></section>
-    <section className="section container"><Cta title="Interested in Alviteq?" body="Talk with us about OwnKeep, partnerships, product feedback, or future opportunities." /></section>
+  return <><PageHero eyebrow="About Alviteq" title="Powerful technology without unnecessary complexity." intro="Alviteq is an independent technology company building software products for everyday life." />
+    <section className="section container"><div className="split"><div><p className="eyebrow">Why Alviteq exists</p><h2>Make capable technology genuinely useful.</h2><p className="lead">Technology can solve meaningful problems, but capability is valuable only when people can understand and depend on it. We create products that turn strong engineering into focused, accessible experiences.</p><p>Alviteq is at the beginning of its journey. We are building deliberately: one real problem, one thoughtful product, and one verified improvement at a time.</p></div><div className="quote-panel">“Technology should become more capable without becoming more complicated.”</div></div></section>
+    <section className="section tint"><div className="container"><div className="section-head"><p className="eyebrow">How we build</p><h2>A continuous product discipline.</h2><p className="lead">Problem → research → design → engineering → test → improve.</p></div><div className="journey">{["Understand the problem","Research the context","Design the experience","Engineer responsibly","Test the reality","Improve continuously"].map((item,index)=><div key={item}><strong>{String(index+1).padStart(2,"0")}</strong><span>{item}</span></div>)}</div></div></section>
+    <section className="section container"><div className="section-head"><p className="eyebrow">Our principles</p><h2>The standard behind every product.</h2></div><FeatureGrid items={[
+      ["01","Useful","Solve a clear problem and create practical value."],
+      ["02","Simple","Make sophisticated capability understandable."],
+      ["03","Secure","Build privacy and protection into the foundation."],
+      ["04","Responsible","Communicate limits honestly and use intelligence with purpose."],
+      ["05","Long-term","Choose maintainable engineering and lasting usefulness."],
+      ["06","Human","Respect the people, decisions, and contexts behind the product."]
+    ]} /></section>
+    <section className="section container"><Cta title="Interested in what we are building?" body="Talk with us about products, partnerships, feedback, or future opportunities." label="Contact Alviteq" /></section>
   </>;
 }

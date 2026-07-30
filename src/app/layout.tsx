@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alviteq.com"),
-  title: { default: "Alviteq — Private technology for everyday life", template: "%s | Alviteq" },
-  description: "Alviteq builds private, dependable software that keeps important information under your control.",
+  title: { default: "Alviteq — Technology built for everyday life", template: "%s | Alviteq" },
+  description: "Alviteq is an independent technology company building thoughtful digital products that solve real-world problems.",
   icons: {
     icon: [
       { url: "/brand/official/favicon.ico", sizes: "any" },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Alviteq",
-    description: "Private technology for everyday life.",
+    description: "Thoughtful digital products that solve real-world problems.",
     url: "https://alviteq.com",
     siteName: "Alviteq",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const nav = [
   ["About", "/about"],
   ["Products", "/products"],
-  ["OwnKeep Product", "/ownkeep"],
+  ["OwnKeep", "/products/ownkeep"],
   ["Technology", "/technology"],
   ["Careers", "/careers"],
 ];
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   width={1500}
                   height={420}
                 />
-                <p>Thoughtful technology designed around privacy, resilience, and human control.</p>
+                <p>Thoughtful digital products built around real problems, dependable engineering, and simple experiences.</p>
               </div>
               <div className="footer-links">
                 <h3>Company</h3>
@@ -76,8 +76,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               <div className="footer-links">
                 <h3>Legal</h3>
-                <Link href="/privacy-policy">Privacy Policy</Link>
-                <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>
+                <Link href="/privacy">Privacy Policy</Link>
+                <Link href="/terms">Terms &amp; Conditions</Link>
               </div>
             </div>
             <div className="copyright">© {new Date().getFullYear()} Alviteq. All rights reserved.</div>

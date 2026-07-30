@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { Cta, FeatureGrid, PageHero } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "OwnKeep", description: "OwnKeep is your encrypted vault for documents, life records, reminders, and passwords." };
+export const metadata: Metadata = { title: "OwnKeep", description: "OwnKeep is a private digital space for documents, records, reminders, passwords, and important life information." };
 
 export default function OwnKeepPage() {
   return <><PageHero eyebrow="OwnKeep · An Alviteq product" title="Keep what matters. Only you. Always." intro="OwnKeep organizes documents and important life information inside an encrypted, offline-capable vault." action={{label:"Ask about OwnKeep",href:"/contact"}} />
