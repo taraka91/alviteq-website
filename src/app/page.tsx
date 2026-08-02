@@ -51,14 +51,21 @@ export default function Home() {
         <div className="v2-section-label"><span>02</span><p>What we believe</p></div>
         <blockquote>Technology should disappear.<br /><span>What remains is the help it gives.</span></blockquote>
         <p className="v2-belief-copy">We start with what people are trying to do, then use design, engineering, and intelligence to make that experience feel simpler—not more technical.</p>
+        <div style={{ marginTop: '3rem', textAlign: 'center' }}>
+          <Image src="/images/alviteq.png" width={800} height={400} alt="Alviteq Vision" style={{ width: '100%', height: 'auto', borderRadius: '1rem' }} />
+        </div>
       </div>
     </section>
 
     <section className="v2-trust section">
       <div className="container">
         <div className="v2-section-label"><span>03</span><p>Built honestly</p></div>
-        <div className="v2-trust-heading"><h2>Early in the journey.<br />Serious about the destination.</h2><p>We will not invent scale, customers, or history. Trust starts with being clear about who we are and how we build.</p></div>
+        <div className="v2-trust-heading"><h2>Early in the journey.<br />Serious about the destination.</h2><p>We will not invent scale, customers, or history. Trust starts with being clear about who we are and how we build. Our ecosystem is built on transparency.</p></div>
         <div className="v2-facts">{trustFacts.map(([value,label])=><div key={value}><strong>{value}</strong><span>{label}</span></div>)}</div>
+        <div style={{ marginTop: '4rem', textAlign: 'center' }}>
+          <p className="eyebrow" style={{ marginBottom: '1.5rem' }}>Ecosystem & Partners</p>
+          <Image src="/images/alviteq_logos.png" width={1000} height={200} alt="Alviteq Ecosystem Logos" style={{ width: '100%', maxWidth: '800px', height: 'auto', margin: '0 auto' }} />
+        </div>
       </div>
     </section>
 
