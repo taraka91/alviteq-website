@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alviteq.com"),
-  title: { default: "Alviteq | Technology Built for Everyday Life", template: "%s | Alviteq" },
-  description: "Alviteq is a technology company building thoughtful digital products that solve real-world problems across mobile, desktop, web and intelligent platforms.",
+  title: { default: "ALVITEQ | Technology Built for Everyday Life", template: "%s | ALVITEQ" },
+  description: "ALVITEQ is a technology company building thoughtful digital products that solve real-world problems across mobile, desktop, web and intelligent platforms.",
   alternates: { canonical: "https://alviteq.com/" },
   robots: { index: true, follow: true },
   icons: {
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     apple: "/brand/official/alviteq-icon-192.png",
   },
   openGraph: {
-    title: "Alviteq | Technology Built for Everyday Life",
-    description: "Alviteq builds thoughtful digital products that solve real-world problems across mobile, desktop, web and intelligent platforms.",
+    title: "ALVITEQ | Technology Built for Everyday Life",
+    description: "ALVITEQ builds thoughtful digital products that solve real-world problems across mobile, desktop, web and intelligent platforms.",
     url: "https://alviteq.com",
-    siteName: "Alviteq",
+    siteName: "ALVITEQ",
     type: "website",
-    images: [{ url: "/brand/alviteq-social-card-final.png", width: 1200, height: 630, alt: "Alviteq — Technology you can trust" }],
+    images: [{ url: "/brand/alviteq-social-card-final.png", width: 1200, height: 630, alt: "ALVITEQ — Technology you can trust" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alviteq | Technology Built for Everyday Life",
+    title: "ALVITEQ | Technology Built for Everyday Life",
     description: "Thoughtful digital products that solve real-world problems.",
     images: ["/brand/alviteq-social-card-final.png"],
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Alviteq",
+  name: "ALVITEQ",
   url: "https://alviteq.com/",
   logo: "https://alviteq.com/brand/official/alviteq-icon-512.png",
   email: "hello@alviteq.com",
@@ -45,10 +45,10 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Alviteq",
+  name: "ALVITEQ",
   url: "https://alviteq.com/",
   description: "Technology built for everyday life.",
-  publisher: { "@type": "Organization", name: "Alviteq" },
+  publisher: { "@type": "Organization", name: "ALVITEQ" },
 };
 
 const nav = [
@@ -68,11 +68,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <header className="site-header">
           <nav className="nav container" aria-label="Main navigation">
-            <Link className="brand" href="/" aria-label="Alviteq home">
+            <Link className="brand" href="/" aria-label="ALVITEQ home">
               <Image
                 className="brand-logo"
                 src="/brand/official/alviteq-horizontal.svg"
-                alt="Alviteq"
+                alt="ALVITEQ"
                 width={1500}
                 height={420}
                 priority
@@ -99,7 +99,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <Image
                   className="footer-logo"
                   src="/brand/official/alviteq-horizontal.svg"
-                  alt="Alviteq"
+                  alt="ALVITEQ"
                   width={1500}
                   height={420}
                 />

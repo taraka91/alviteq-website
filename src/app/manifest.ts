@@ -4,8 +4,8 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Alviteq",
-    short_name: "Alviteq",
+    name: "ALVITEQ",
+    short_name: "ALVITEQ",
     description: "Technology built for everyday life.",
     start_url: "/",
     display: "standalone",

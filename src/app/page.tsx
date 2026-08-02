@@ -11,7 +11,7 @@ const trustFacts = [
 const roadmap = [
   ["Now", "OwnKeep", "Private digital life management", "Building"],
   ["Next", "Product two", "A new everyday problem", "Exploring"],
-  ["Future", "Alviteq", "A family of useful products", "Long term"],
+  ["Future", "ALVITEQ", "A family of useful products", "Long term"],
 ];
 
 export default function Home() {
@@ -52,7 +52,7 @@ export default function Home() {
         <blockquote>Technology should disappear.<br /><span>What remains is the help it gives.</span></blockquote>
         <p className="v2-belief-copy">We start with what people are trying to do, then use design, engineering, and intelligence to make that experience feel simpler—not more technical.</p>
         <div style={{ marginTop: '3rem', textAlign: 'center' }}>
-          <Image src="/images/alviteq.png" width={800} height={400} alt="Alviteq Vision" style={{ width: '100%', height: 'auto', borderRadius: '1rem' }} />
+          <Image src="/images/alviteq.png" width={800} height={400} alt="ALVITEQ Vision" style={{ width: '100%', height: 'auto', borderRadius: '1rem' }} />
         </div>
       </div>
     </section>
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="v2-facts">{trustFacts.map(([value,label])=><div key={value}><strong>{value}</strong><span>{label}</span></div>)}</div>
         <div style={{ marginTop: '4rem', textAlign: 'center' }}>
           <p className="eyebrow" style={{ marginBottom: '1.5rem' }}>Ecosystem & Partners</p>
-          <Image src="/images/alviteq_logos.png" width={1000} height={200} alt="Alviteq Ecosystem Logos" style={{ width: '100%', maxWidth: '800px', height: 'auto', margin: '0 auto' }} />
+          <Image src="/images/alviteq_logos.png" width={1000} height={200} alt="ALVITEQ Ecosystem Logos" style={{ width: '100%', maxWidth: '800px', height: 'auto', margin: '0 auto' }} />
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@ export default function Home() {
     <section className="v2-final">
       <div className="container v2-final-inner">
         <Image src="/brand/official/alviteq-icon-white.svg" width={512} height={512} alt="" />
-        <div><p className="eyebrow">Technology you can trust</p><h2>Building for everyday life.<br />And everything after.</h2><Link className="button light" href="/about">Meet Alviteq</Link></div>
+        <div><p className="eyebrow">Technology you can trust</p><h2>Building for everyday life.<br />And everything after.</h2><Link className="button light" href="/about">Meet ALVITEQ</Link></div>
       </div>
     </section>
   </>;

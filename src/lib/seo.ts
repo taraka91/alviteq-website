@@ -5,7 +5,7 @@ const socialImage = {
   url: `${siteUrl}/brand/alviteq-social-card-final.png`,
   width: 1200,
   height: 630,
-  alt: "Alviteq — Technology you can trust",
+  alt: "ALVITEQ — Technology you can trust",
 };
 
 export function pageMetadata({
@@ -26,7 +26,7 @@ export function pageMetadata({
       title,
       description,
       url,
-      siteName: "Alviteq",
+      siteName: "ALVITEQ",
       type: "website",
       images: [socialImage],
     },

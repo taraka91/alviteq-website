@@ -16,7 +16,7 @@ export function FeatureGrid({ items }: { items: Array<[string, string, string]> 
   </div>;
 }
 
-export function Cta({ title, body, label = "Contact Alviteq", href = "/contact" }: {
+export function Cta({ title, body, label = "Contact ALVITEQ", href = "/contact" }: {
   title: string; body: string; label?: string; href?: string;
 }) {
   return <section className="cta"><div><p className="eyebrow">Let&apos;s talk</p><h2>{title}</h2><p>{body}</p></div>
